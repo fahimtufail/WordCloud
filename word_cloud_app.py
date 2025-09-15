@@ -107,18 +107,8 @@ if uploaded_file:
     if st.button(f"Save as {format_}"):
         buffered = BytesIO()
         plt.savefig(buffered, format=format_, dpi=resolution)
-        st.markdown(get_image_download_link(buffered, format_), unsafe_allow_html=True)
-    
-    
-    # Word count table at the end
-    st.sidebar.markdown("---")
-    st.sidebar.subheader("Subscribe to our Youtube Channel to learn Data Science in Urdu/Hindi")
-    # add a youtube video
-    st.sidebar.video("https://youtu.be/omk5b1m2h38")
-    st.sidebar.markdown("---")
-    # add author name and info
-    st.sidebar.markdown("Created by: [Dr. Muhammad Aammar Tufail](https://github.com/AammarTufail)")
-    st.sidebar.markdown("Contact: [Email](mailto:aammar@codanics.com)")
+        st.markdown(get_image_download_link(buffered, format_), unsafe_allow_html=True) 
+   
 
 
     
